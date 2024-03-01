@@ -107,4 +107,9 @@ class ViteSSR extends LambdaFunction
 
 		Sidecar::log('JavaScript SSR bundle compiled!');
 	}
+
+    public function runtime()
+    {
+        return Runtime::NODEJS_20;
+    }
 }
