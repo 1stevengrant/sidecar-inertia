@@ -110,6 +110,6 @@ class ViteSSR extends LambdaFunction
 
     public function runtime()
     {
-        return Runtime::NODEJS_20;
+        return \Hammerstone\Sidecar\Runtime::NODEJS_20;
     }
 }
