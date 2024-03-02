@@ -96,7 +96,7 @@ class ViteSSR extends LambdaFunction
 	{
 		Sidecar::log('Compiling Inertia SSR bundle.');
 
-		$command = ['vite', 'build', '--ssr'];
+		$command = ['npm', 'run', 'build'];
 
 		Sidecar::log('Running ' . implode(' ', $command));
 
@@ -108,8 +108,8 @@ class ViteSSR extends LambdaFunction
 		Sidecar::log('JavaScript SSR bundle compiled!');
 	}
 
-    public function runtime()
-    {
-        return \Hammerstone\Sidecar\Runtime::NODEJS_20;
-    }
+	public function runtime()
+    	{
+        	return \Hammerstone\Sidecar\Runtime::NODEJS_20;
+    	}
 }
